@@ -1,28 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="svg/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS Boilerplate</title>
-</head>
+  </head>
 
-<body>
-    <section class="text-gray-600 body-font" id="app">
-        <div class="container flex px-5 py-24 items-center flex-col" style="text-align: center;">
-            <img class="w-64 mb-20 rounded" style="width:256px; height:auto" alt="hero" src="//tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg">
-            <div class="text-center lg:w-2/3 w-full">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Tailwind CSS Boilerplate</h1>
-                <p class="mb-8">Vite + Tailwind CSS + Awesomeness</p>
-                <div class="mx-auto ">
-                    <a href='https://github.com/hasinhayder/tailwind-boilerplate' class=" text-white bg-cyan-500 font-semibold border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Download</a>
-                    <a target="_blank" href='https://github.com/hasinhayder' class="ml-4  text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Don't Click</a>
+  <body class="bg-gray-100">
+    <div class="font-sans text-gray-900 antialiased">
+      <div class="container max-w-7xl mx-auto p-2 md:p-10">
+        <div class="grid gap-5 lg:grid-cols-3">
+          <div class="relative">
+            <div class="space-y-5 md:sticky md:top-8">
+              <div class="shadow rounded-xl overflow-hidden bg-white relative"><!-- Start User Block -->
+                <div class="h-48 bg-cover bg-gradient-to-bl from-indigo-600 to-blue-400"></div>
+                <div class="p-4">
+                    <div class="flex justify-between align-baseline mb-4">
+                        <img src="/assets/img/profile.jpg" alt="Avatar" class="w-28 rounded-2xl -mt-20 border-4 shadow border-white">
+                        <p>
+                            <span class="tracking-wider text-gray-600 inline-flex items-center justify-center bg-gray-200 border border-gray-600 px-3 py-2 uppercase rounded-full mx-2 leading-none	text-sm font-semibold" title="busy">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                                </svg>
+                                busy
+                            </span>
+                        </p>
+                    </div>
+                    <div class="text-2xl font-semibold mb-1.5">Ali Golkar</div>
+                    <div class="text-gray-500">Mid-level Back-end Developer</div>
+                    <div class="text-gray-500 mb-7">Working at <a class="text-gray-600 font-bold uppercase hover:underline" href="https://jihaat.com/">Jihaat.inc</a></div>
+                    <a href="https://test.com/" class="flex justify-between text-white bg-indigo-600 hover:bg-indigo-700 transition rounded-md shadow-sm overflow-hidden">
+                        <span class="whitespace-nowrap w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-lg font-medium uppercase">
+                            Download CV
+                        </span>
+                        <span class="whitespace-nowrap inline-flex items-center justify-center px-3 py-2 border border-transparent text-lg font-medium bg-indigo-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </span>
+                    </a>
                 </div>
+              </div>
+              <div class="shadow rounded-xl overflow-hidden bg-white relative"><!-- Start User Block -->
+                <div class="p-4">
+                    <div class="text-xl font-semibold mb-4">Information</div>
+                    <div class="flex justify-between mb-2">
+                        <span class="capitalize text-gray-500">location</span>
+                        <a class="capitalize text-gray-600 font-medium hover:underline" target=”_blank” href="https://www.openstreetmap.org/relation/8167754">Shiraz, Iran</a>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="capitalize text-gray-500">Experience</span>
+                        <span class="capitalize text-gray-600">5 years</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span class="capitalize text-gray-500">phone number</span>
+                        <a class="text-gray-600 font-medium hover:underline" target=”_blank” href="tel:+989175918439">+98 917 591 8439</a>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="capitalize text-gray-500">email</span>
+                        <a class="text-gray-600 font-medium hover:underline" target=”_blank” href="mailto://lokiwich@pm.me/">lokiwich@pm.me</a>
+                    </div>
+                </div>
+              </div>
+              <div class="shadow rounded-xl overflow-hidden bg-white relative"><!-- Start User Block -->
+                <div class="p-4">
+                  <div class="text-xl font-semibold mb-4">Skills</div>
+                  <div class="flex flex-wrap space-y-2 space-x-2">
+                    <span></span>
+                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-3 py-2.5 uppercase rounded-lg leading-none text-sm font-semibold" title="busy">
+                        php
+                    </span>
+                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-3 py-2.5 uppercase rounded-lg leading-none text-sm font-semibold" title="busy">
+                        nodeJS
+                    </span>
+                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-3 py-2.5 uppercase rounded-lg leading-none text-sm font-semibold" title="busy">
+                        nestJs
+                    </span>
+                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-3 py-2.5 uppercase rounded-lg leading-none text-sm font-semibold" title="busy">
+                        laravel
+                    </span>
+                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-3 py-2.5 uppercase rounded-lg leading-none text-sm font-semibold" title="busy">
+                        livewire
+                    </span>
+                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-3 py-2.5 uppercase rounded-lg leading-none text-sm font-semibold" title="busy">
+                        interia
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="space-y-5 lg:col-span-2">
+              <div class="shadow rounded-xl bg-white overflow-hidden"><!-- Start User Block -->
+                  <div class="p-8 relative border-b">
+                      <div class="text-xl font-semibold mb-4">About me</div>
+                      <p class="mb-4">
+                          Libero quas veritatis nulla distinctio fuga nihil temporibus et. Quia dicta sapiente qui porro molestiae nobis incidunt voluptatem. Et voluptas sunt nihil. At perferendis voluptatem dolores nulla. Adipisci dolore non. Praesentium ipsa magnam ut quia explicabo voluptates.
+                      </p>
+                      <div class="flex flex-wrap space-x-4">
+                          <div class="flex flex-wrap items-center space-x-1">
+                              <div class="flex">
+                                    <a href="http://github.com/lokiwich" target="_blank" class="flex items-center text-indigo-500 hover:text-indigo-600">
+                                        <svg class="w-7 h-7" viewBox="0 0 448 512">
+                                            <path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z" class=""></path>
+                                        </svg>
+                                    </a>
+                                    <a href="http://twiter.com/lokiwich" target="_blank" class="flex items-center text-indigo-500 hover:text-indigo-600">
+                                        <svg class="w-7 h-7" viewBox="0 0 448 512">
+                                            <path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" class=""></path>
+                                        </svg>
+                                    </a>
+                                    <a href="http://instagram.com/lokiwich" target="_blank" class="flex items-center text-indigo-500 hover:text-indigo-600">
+                                        <svg class="w-7 h-7" viewBox="0 0 448 512">
+                                            <path fill="currentColor" d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z" class=""></path>
+                                        </svg>
+                                    </a>
+                              </div>
+                              <span class="text-lg font-semibold">lokiwich</span>
+                          </div>
+                          <div class="flex flex-wrap items-center space-x-1">
+                              <a href="http://t.me/aligolkarali" target="_blank" class="flex items-center text-indigo-500 hover:text-indigo-600">
+                                  <svg class="w-7 h-7" viewBox="0 0 496 512">
+                                      <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z" class=""></path>
+                                  </svg>
+                              </a>
+                              <span class="text-lg font-semibold">aligolkarali</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="px-8 flex space-x-8 items-center">
+                      <a class="py-5 text-indigo-600 font-semibold text-md capitalize border-b-2 border-indigo-600" href="/">resume</a>
+                      <a class="py-5 text-gray-600 font-semibold text-md capitalize" href="/">products</a>
+                      <a class="py-5 text-gray-600 font-semibold text-md capitalize" href="/">blog</a>
+                  </div>
+              </div>
+              <div class="shadow rounded-xl overflow-hidden bg-white relative"><!-- Start User Block -->
+                <div class="p-8">
+                    <div class="text-xl font-semibold mb-4">Experience</div>
+                    <div class="mb-4 flex space-x-3">
+                        <div class="overflow-hidden w-16 h-16 rounded-xl bg-red-500 flex items-center content-center p-2">
+                            <img src="/assets/img/jihaat.png" alt="Jihaat"/>
+                        </div>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center content-between">
+                                <div class="space-y-1.5 mr-auto">
+                                    <div class="font-medium text-xl capitalize">back-end developer</div>
+                                    <div class="flex space-x-4">
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span>Jihaat</span>
+                                        </div>
+                                        <a class="flex items-center space-x-1 text-gray-400 font-medium hover:underline" target=”_blank” href="https://www.openstreetmap.org/relation/8167754">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                            <span>Shiraz, Iran</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 sm:text-right">
+                                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-1.5 capitalize rounded leading-loose text-xs font-semibold" title="busy">
+                                        full time
+                                    </span>
+                                    <div class="flex items-center space-x-1 text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>July 2020 – Present</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">
+                                It was the first time in Jihaat that I experienced working in a professional team.
+                                Jihaat is working in the field of advertising and branding for businesses.
+                                My job was to design and create the API for the Front-End team.
+                            </p>
+                            <div class="border-b border-gray-200"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4 flex space-x-3">
+                        <div class="overflow-hidden w-16 h-16 rounded-xl bg-yellow-400 flex items-center content-center p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-14 fill-current text-white">
+                                <path fill="none" d="M0 0h24v24H0z"/><path d="M2.88 18.054a35.897 35.897 0 0 1 8.531-16.32.8.8 0 0 1 1.178 0c.166.18.304.332.413.455a35.897 35.897 0 0 1 8.118 15.865c-2.141.451-4.34.747-6.584.874l-2.089 4.178a.5.5 0 0 1-.894 0l-2.089-4.178a44.019 44.019 0 0 1-6.584-.874zm6.698-1.123l1.157.066L12 19.527l1.265-2.53 1.157-.066a42.137 42.137 0 0 0 4.227-.454A33.913 33.913 0 0 0 12 4.09a33.913 33.913 0 0 0-6.649 12.387c1.395.222 2.805.374 4.227.454zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                        </div>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center content-between">
+                                <div class="space-y-1.5 mr-auto">
+                                    <div class="font-medium text-xl capitalize">back-end developer</div>
+                                    <div class="flex space-x-4">
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span>Freelancer</span>
+                                        </div>
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                            <span>Space</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 sm:text-right">
+                                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-1.5 capitalize rounded leading-loose text-xs font-semibold" title="busy">
+                                        full time
+                                    </span>
+                                    <div class="flex items-center space-x-1 text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>February 2019 - June 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">
+                                I think every successful programmer has been a freelancer for a period of their
+                                career. I also decided to work as a freelancer for a while to have more useful time to
+                                learn and more power in choice.
+                            </p>
+                            <div class="border-b border-gray-200"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4 flex space-x-3">
+                        <div class="overflow-hidden w-16 h-16 rounded-xl bg-green-500 flex items-center content-center p-2">
+                            <img src="/assets/img/mahbaan.png" alt="mahbaan"/>
+                        </div>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center content-between">
+                                <div class="space-y-1.5 mr-auto">
+                                    <div class="font-medium text-xl capitalize">full-stack developer</div>
+                                    <div class="flex space-x-4">
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span>Mahbaan</span>
+                                        </div>
+                                        <a class="flex items-center space-x-1 text-gray-400 font-medium hover:underline" target=”_blank” href="https://www.openstreetmap.org/relation/8167754">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                            <span>Shiraz, Iran</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 sm:text-right">
+                                    <span class="tracking-wider text-indigo-600 inline-flex items-center justify-center bg-indigo-100 px-1.5 capitalize rounded leading-loose text-xs font-semibold" title="busy">
+                                        full time
+                                    </span>
+                                    <div class="flex items-center space-x-1 text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>October 2017 – January 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">
+                                Mahban startup operated in the field of insurance training and sales.
+                                My task was to create user management panels and smart sites to calculate
+                                insurance prices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="shadow rounded-xl overflow-hidden bg-white relative"><!-- Start User Block -->
+                <div class="p-8">
+                    <div class="text-xl font-semibold mb-4">Education</div>
+                    <div class="mb-4 flex space-x-3">
+                        <div class="overflow-hidden w-16 h-16 rounded-xl  bg-indigo-900 flex items-center content-center p-2">
+                            <img src="/assets/img/apadana.png" alt="Apadana"/>
+                        </div>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center content-between">
+                                <div class="space-y-1.5 w-full">
+                                    <div class="font-medium text-xl capitalize">software engineering</div>
+                                    <div class="flex flex-row justify-between space-x-4">
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                            </svg>
+                                            <span class="capitalize">apadana institute of higher education</span>
+                                        </div>
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span>2020 – Present</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4 flex space-x-3">
+                        <div class="overflow-hidden w-16 h-16 rounded-xl  bg-indigo-900 flex items-center content-center p-2">
+                            <img src="/assets/img/bahonar.png" alt="Bahonar"/>
+                        </div>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center content-between">
+                                <div class="space-y-1.5 w-full">
+                                    <div class="font-medium text-xl capitalize">software engineering</div>
+                                    <div class="flex justify-between space-x-4">
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                            </svg>
+                                            <span class="capitalize">Bahonar University of Shiraz</span>
+                                        </div>
+                                        <div class="flex items-center space-x-1 text-gray-400">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span>2018 – 2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-200"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
         </div>
-    </section>
-</body>
-<script type="module" src="./assets/js/main.js"></script>
-
+    </div>
+    </div>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
 </html>
