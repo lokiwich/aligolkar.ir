@@ -9,7 +9,7 @@ export default {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                products: resolve(__dirname, 'products.html')
+                products: resolve(__dirname, 'products/index.html')
             }
         }
     }
