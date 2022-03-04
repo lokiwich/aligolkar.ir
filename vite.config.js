@@ -1,16 +1,16 @@
-const { resolve } = require('path')
+const { resolve } = require("path");
 export default {
-    plugins: [],
-    server: {
-        open: '/index.html',
-        port: 3116,
+  plugins: [],
+  server: {
+    open: "/index.html",
+    port: 3116,
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        ndmug: resolve(__dirname, "ndmug/index.html"),
+      },
     },
-    build: {
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'index.html'),
-                // products: resolve(__dirname, 'products/index.html')
-            }
-        }
-    }
-}
+  },
+};
