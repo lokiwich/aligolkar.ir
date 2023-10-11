@@ -10,6 +10,7 @@ export default {
       input: {
         main: resolve(__dirname, "index.html"),
         ndmug: resolve(__dirname, "ndmug/index.html"),
+        'sitemap.xml': resolve(__dirname, "sitemap.xml"),
       },
     },
   },
